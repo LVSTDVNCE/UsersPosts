@@ -1,0 +1,14 @@
+.Card {
+	margin-bottom: 25px;
+}
+
+.CardHeading {
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.CardHeading::first-letter,
+.CardBody {
+	text-transform: capitalize;
+}

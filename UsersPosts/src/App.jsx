@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import UsersList from './components/UsersList/UsersList'
+import Heading from './components/Heading/Heading'
 
 function App() {
 	const [users, setUsers] = useState([])
@@ -31,7 +32,12 @@ function App() {
 		fetchPosts()
 	}, [])
 
-	return <UsersList users={users} posts={posts} />
+	return (
+		<div className='wrapper'>
+			<Heading text={'Users'} />
+			<UsersList users={users} posts={posts} />
+		</div>
+	)
 }
 
 export default App
